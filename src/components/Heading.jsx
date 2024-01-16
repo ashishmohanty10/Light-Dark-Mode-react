@@ -11,7 +11,9 @@ const Heading = () => {
   return (
     <div className={darkTheme ? "dark" : ""}>
       <div className="container dark:bg-black h-screen">
-        <button onClick={toggleTheme}>CLick Me</button>
+        <button className="dark:text-white" onClick={toggleTheme}>
+          CLick Me
+        </button>
 
         <div className="flex justify-center ">
           <h1 className="text-center py-5 dark:text-white">
