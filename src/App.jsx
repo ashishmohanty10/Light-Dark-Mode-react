@@ -1,10 +1,13 @@
 import React from "react";
 import Heading from "./components/Heading";
+import ThemeProvider from "./context/ThemeProvider";
 
 const App = () => {
   return (
     <div>
-      <Heading />
+      <ThemeProvider>
+        <Heading />
+      </ThemeProvider>
     </div>
   );
 };
